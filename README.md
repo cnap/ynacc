@@ -1,5 +1,4 @@
 # YNACC
 
-This repository is still incomplete. Please check back later for updates.
+Please follow this url to obtain the dataset http://webscope.sandbox.yahoo.com/catalog.php?datatype=l&did=83
 
-napoles -at- cs.jhu.edu

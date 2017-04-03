@@ -1,0 +1,169 @@
+<!-- Bootstrap v3.0.3 -->
+<link href="https://s3.amazonaws.com/mturk-public/bs30/css/bootstrap.min.css" rel="stylesheet" />
+<section class="container" id="Other" style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:0.9em;">
+<div class="row col-xs-12 col-md-12"><!-- Instructions -->
+<div class="panel panel-primary">
+<div class="panel-heading"><strong>Instructions</strong></div>
+
+<div class="panel-body">
+<p><span style="font-family: Verdana, Geneva, sans-serif; font-size: 11.7px; line-height: 20.8px;">Read the linked article and the comment thread below and choose the best options for the conversation&#39;s Type, Agreement, and Constructiveness in the questions that follow.</span></p>
+
+<p><strong>1. Type (Please choose as many as apply, but try to stick to capturing the overall tone and topic of the discussion)</strong></p>
+
+<ul>
+	<li><strong>Argumentative</strong> - A &quot;back-and-forth,&quot; argumentative discussion without much credit given by either side. Statements will often be <strong>adamant or forceful, but not particularly mean or hateful</strong>. Lots of point and counterpoint, not necessarily with any conclusion. There might be one or two mean or insulting comments.</li>
+	<li><strong>Flamewar</strong> - Mainly <strong>insults</strong> and <strong>name calling</strong> - extremely negative. Not constructive or informative.</li>
+	<li><strong>Snarky/humorous</strong> - The conversation is mostly snark or jokes that may be on- or off-topic. Users are choosing to engage one another in humor rather than argue or sympathize.</li>
+	<li><strong>Positive/respectful</strong> - Conversation is mostly users who are all expressing opinions with respect and empathy.</li>
+	<li><strong>Off-Topic / Digression</strong> - Comments are completely irrelevant to article and/or each other; OR users start on topic but veer off in another direction.</li>
+	<li><strong>Personal stories</strong> - Users exchange personal anecdotes.</li>
+	<li><strong>NA</strong>- Used for conversations that are too short to develop into a conclusive &quot;type&quot; of conversation.</li>
+</ul>
+
+<p>2. <strong>Agreement (Please choose only one)</strong><br />
+Judge whether the thread:</p>
+
+<ul>
+	<li>has <strong>agreement throughout</strong>;</li>
+	<li>has <strong>initial disagreement converging to agreement</strong> (convincing);&nbsp;</li>
+	<li>has <strong>continual disagreement throughout</strong>;</li>
+	<li>has <strong>agreement initially and devolves to disagreement</strong>, or&nbsp;</li>
+	<li><strong>NA</strong> - the thread is too short or has too many digressions to rate the agreement level. NA also covers conversations that have a mix of agreement and disagreement.</li>
+</ul>
+
+<p><strong>3. Constructiveness (Please choose only one)</strong></p>
+
+<ul>
+	<li><strong>Constructive</strong> - A conversation or argument <strong>does not have to have a winner or conclusion</strong> to be constructive, as long as there is a clear exchange of ideas, opinions, and information done so somewhat respectfully. A constructive conversation should contain <strong>one or multiple points of agreement and/or disagreement,</strong> all mostly on topic, and be <strong>relatively respectful</strong>. An outsider would find a constructive conversation interesting or informative, <strong>even if there is disagreement between the participants.</strong></li>
+	<li><strong>Non-constructive</strong> - These are largely unproductive threads. Usually, the initial commenter&#39;s point does not get properly addressed, comments contains few attempts at persuasiveness, and each comment can be taken in isolation.&nbsp; A conversation can also be deemed non-constructive if largely negative (i.e. just back and forth of insults) or &quot;all over the place&quot; in terms of topic.</li>
+	<li><strong>NA</strong> - Used for discussions that are too short to determine constructiveness.</li>
+</ul>
+</div>
+</div>
+<!-- End Instructions --><!-- Content Body -->
+
+<table>
+	<tbody>
+		<tr>
+			<td colspan="2"><strong>Article Headline:</strong></td>
+			<td>${headline}</td>
+		</tr>
+		<tr>
+			<td colspan="2"><label>Link to article:</label></td>
+			<td>
+			<p><b><a href="${url}" target="_blank">${url}</a></b></p>
+			</td>
+		</tr>
+		<!-- dynamically generate table --><script type="text/Javascript">
+			var usernames = [
+  			"${username_0}",
+	  		"${username_1}",
+		  	"${username_2}",
+			  "${username_3}",
+			  "${username_4}",
+  			"${username_5}",
+	  		"${username_6}",
+  			"${username_7}",
+  			"${username_8}",
+  			"${username_9}",
+  			"${username_10}",
+  			"${username_11}",
+  			"${username_12}",
+  			"${username_13}",
+  		  "${username_14}" ];
+
+			var comments = [
+  			"${comment_0}",
+	  		"${comment_1}",
+		  	"${comment_2}",
+			  "${comment_3}",
+			  "${comment_4}",
+  			"${comment_5}",
+	  		"${comment_6}",
+  			"${comment_7}",
+  			"${comment_8}",
+  			"${comment_9}",
+  			"${comment_10}",
+  			"${comment_11}",
+  			"${comment_12}",
+  			"${comment_13}",
+  			"${comment_14}" ];
+			
+			function writeTable() {
+		    var bgcolors = [ "#fff8dc","#ffffff"];
+
+			  for (var i = 0; i < "${num comments}"; i++) {
+					document.write("<tr style=\"background-color:"+bgcolors[i%2]+"\">");
+					document.write("<td><strong>"+(i+1)+".</strong></td>");
+					document.write("<td><strong>Username:</strong></td>");
+					document.write("<td>"+usernames[i]+"</td>");
+					document.write("</tr>");
+					document.write("<tr style=\"background-color:"+bgcolors[i%2]+"\">");
+					document.write("<td/><td><strong>Comment:</strong></td>");
+					document.write("<td style=\"vertical-align=top\">"+comments[i]+"</td>");
+					document.write("</tr>");
+					document.write("<tr><td colspan=\"3\">-----------------</td></tr>");
+				}
+			}
+			writeTable();
+		</script>
+	</tbody>
+</table>
+&nbsp;
+
+<section>
+<fieldset>
+<h4><span style="font-weight: bold; font-size: 0.9em; line-height: 1.6em;">1. What &quot;Type&quot; of conversation is this? Choose one or many categories for this comment (give at least one answer):</span></h4>
+</fieldset>
+
+<fieldset>
+<div class="checkbox"><label><input name="sd_type" type="checkbox" value="Informative/Constructive/Productive" /></label><strong>Argumentative</strong> - A &quot;back-and-forth,&quot; argumentative discussion without much credit given by either side. Statements will often be <strong>adamant or forceful, but not particularly mean or hateful</strong>. Lots of point and counterpoint, not necessarily with any conclusion. There might be one or two mean or insulting comments.<br />
+<label><input name="sd_type" type="checkbox" value="Controversial" /></label><strong>Flamewar</strong> - <strong>Mainly</strong> <strong>insults</strong> and <strong>name calling</strong> - extremely negative. Not constructive or informative.<br />
+<label><input name="sd_type" type="checkbox" value="Sarcastic" /></label><strong>Snarky/humorous</strong> - The conversation is mostly snark or jokes that may be on- or off-topic. Users are choosing to engage one another in humor rather than argue or sympathize.<br />
+<label><input name="sd_type" type="checkbox" value="Funny" /></label><strong>Positive/respectful</strong> - The conversation is mostly users who are all expressing opinions with respect and empathy.<br />
+<label><input name="sd_type" type="checkbox" value="Warm/Sympathetic" /></label><strong>Off-Topic / Digression</strong> - Comments are completely irrelevant to the article and/or each other; <em>OR</em> users start on topic but veer off in another direction.<br />
+<label><input name="sd_type" type="checkbox" value="Off Topic" /></label><strong>Personal stories</strong> - Users exchange personal anecdotes.<br />
+<label><input name="sd_type" type="checkbox" value="Something Else" /><strong>N</strong></label><strong>A</strong>- Used for conversations that are too short to develop into a conclusive &quot;type&quot; of conversation.</div>
+</fieldset>
+
+<fieldset>
+<h4><label>2. Agreement (must be answered): Rate the agreement level in this discussion.</label></h4>
+
+<div class="radio"><label><input name="sd_agreement" type="radio" value="Agreement throughout" />Agreement throughout</label></div>
+
+<div class="radio"><label><input name="sd_agreement" type="radio" value="Initial disagreement" />Initial disagreement converging to agreement (convincing)</label></div>
+
+<div class="radio"><label><input name="sd_agreement" type="radio" value="Continual disagreement" />Continual disagreement throughout</label></div>
+
+<div class="radio"><label><input name="sd_agreement" type="radio" value="Initial agreement" />Agreement initially that turns to disagreement</label></div>
+
+<div class="radio"><label><input name="sd_agreement" type="radio" value="NA" />NA - the thread is too short or has too many digressions to rate the agreement level. NA also covers conversations that have a mix of agreement and disagreement</label></div>
+</fieldset>
+
+<fieldset>
+<h4><label>3. Constructiveness (must be answered): Is this discussion...?</label></h4>
+
+<div class="radio"><label><input name="sd_constructive" type="radio" value="Constructive" />Constructive</label></div>
+
+<div class="radio"><label><input name="sd_constructive" type="radio" value="Not constructive" />Not constructive</label></div>
+
+<div class="radio"><label><input name="sd_constructive" type="radio" value="NA" />NA - used for discussions that are too short to determine constructiveness</label></div>
+</fieldset>
+</section>
+</div>
+</section>
+
+<fieldset>
+<div class="input-group"><label>Comments? (optional)</label> <input class="form-control" name="turker_comments" size="120" type="text" /></div>
+</fieldset>
+
+<fieldset><br />
+&nbsp;</fieldset>
+<!-- End Content Body --><!-- close container -->
+<style type="text/css">fieldset {
+    padding: 10px;
+    background:#fbfbfb;
+    border-radius:5px;
+    margin-bottom:5px;
+}
+</style>

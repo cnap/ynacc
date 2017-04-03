@@ -5,8 +5,8 @@ The dataset contains comment threads posted in response to online news articles.
 
 For more information about this work, please see our paper,
 
-[**Finding Good Conversations Online: The Yahoo News Annotated Corpus**](law-2017-ynacc.pdf)
-Courtney Napoles, Joel Tetreault, Enrica Rosato, Brian Provenzale, and Aasish Pappu
+[**Finding Good Conversations Online: The Yahoo News Annotated Corpus**](law-2017-ynacc.pdf)  
+Courtney Napoles, Joel Tetreault, Enrica Rosato, Brian Provenzale, and Aasish Pappu  
 11th Linguistic Annotation Workshop (LAW-XI), 2017
 
 This paper should be cited in any research using this corpus.
@@ -70,5 +70,5 @@ Marilyn Walker, Jean Fox Tree, Pranav Anand, Rob Abbott, and Joseph King. _A cor
 
 ---
 
-Contact: Courney Napoles <napoles@cs.jhu.edu>
+Contact: Courney Napoles <napoles@cs.jhu.edu>  
 Updated: 3 April 2017
